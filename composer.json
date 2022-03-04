@@ -1,0 +1,67 @@
+{
+    "name": "coderflex/comments",
+    "description": "A package to add comments into your laravel app",
+    "keywords": [
+        "coderflex",
+        "laravel",
+        "comments"
+    ],
+    "homepage": "https://github.com/coderflex/comments",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oussama Sid",
+            "email": "oussama@coderflex.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^9.0",
+        "livewire/livewire": "^2.10",
+        "spatie/laravel-package-tools": "^1.9.2"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.0",
+        "nunomaduro/larastan": "^2.0.1",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "spatie/laravel-ray": "^1.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "Coderflex\\Comments\\": "src",
+            "Coderflex\\Comments\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Coderflex\\Comments\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coderflex\\Comments\\CommentsServiceProvider"
+            ],
+            "aliases": {
+                "Comments": "Coderflex\\Comments\\Facades\\Comments"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
