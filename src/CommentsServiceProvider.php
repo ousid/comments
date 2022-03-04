@@ -2,10 +2,10 @@
 
 namespace Coderflex\Comments;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Coderflex\Comments\Commands\CommentsCommand;
 use Livewire\Livewire;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class CommentsServiceProvider extends PackageServiceProvider
 {
