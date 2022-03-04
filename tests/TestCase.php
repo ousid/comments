@@ -2,9 +2,9 @@
 
 namespace Coderflex\Comments\Tests;
 
+use Coderflex\Comments\CommentsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Coderflex\Comments\CommentsServiceProvider;
 
 class TestCase extends Orchestra
 {
